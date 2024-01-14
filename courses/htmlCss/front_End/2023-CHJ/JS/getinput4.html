@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Get Input
+        </title>
+    </head>
+    <body>
+        <input id="text_added" type="text"/>
+        <button onclick="addTask();">Add Task</button>
+
+        <div id="add-here-todo"></div>
+
+        <script>
+            var todos=[];
+            //addTask() 
+            function addTask(){
+                let text_box=document.getElementById('text_added');
+                let title=text_box.value;
+                todos.push(title);
+                render(); // render() on the html page
+            }
+            function render(){
+                // 
+                document.getElementById('add-here-todo').innerHTML=" ";// reset the list
+                todos.forEach(function (item){
+                    let element=document.createElement('div');
+                    element.innerText=item;
+                    //kwandika muri div noneho, instead of body-- we use div's id
+                    let todoList=document.getElementById('add-here-todo');
+                    todoList.appendChild(element);
+                })
+            }
+
+        </script>
+    </body>
+</html>

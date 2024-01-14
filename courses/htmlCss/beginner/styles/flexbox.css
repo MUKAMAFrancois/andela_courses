@@ -1,0 +1,94 @@
+/* https://youtu.be/mCSy9z3H3Ow?list=PLwJhhWUZudKoCFi2MyC9ZD6XX082goO_S */
+.flex-container{
+    display:flex;
+    column-gap: 8px;
+
+    /* 
+  Flex Container Properties:
+
+flex-direction: Defines the direction of the main axis. Values include row, column, row-reverse, and column-reverse.
+justify-content: Aligns items along the main axis. Values include flex-start, flex-end, center, space-between, and space-around.
+align-items: Aligns items along the cross axis. Values include flex-start, flex-end, center, baseline, and stretch.
+align-content: Aligns multiple lines of items when there's extra space in the cross axis. Values include flex-start, flex-end, center, space-between, and space-around.
+flex-wrap
+flex-flow :This is a shorthand for the flex-direction and flex-wrap properties
+gap, row-gap, column-gap
+    */
+
+   /*  flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+   
+
+}
+.flex-item{
+
+    /* Flex Item Properties:
+     order: Controls the order in which the flex items appear within the flex container.
+flex-grow: Specifies the ability for a flex item to grow.
+flex-shrink: Specifies the ability for a flex item to shrink.
+flex-basis: Specifies the initial size of a flex item.
+flex: A shorthand property for setting flex-grow, flex-shrink, and flex-basis. */
+    background-color:tomato;
+    height: 80px;
+    width: 80px;
+    list-style: none;
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+    padding:20px;
+    margin-top:60px;
+    text-align: center;
+
+    
+    line-height:80px;
+
+    
+}
+
+.navigation{
+    display: flex;
+    margin:0;
+    padding:20px;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: #0d8aaf;
+    list-style: none;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding:18px;
+}
+
+.navigation a:hover{
+    cursor: pointer;
+    background-color: #24caa4;
+}
+
+@media all and (max-width:800px){
+    .navigation{
+        justify-content: center;
+        background-color: #38ebd0;
+    }
+}
+
+@media all and (max-width:600px){
+    .navigation{
+        background-color: #06a2a5;
+        flex-flow: column wrap;
+
+    }
+    .navigation a{
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    .navigation li:last-of-type a{
+        border-bottom: none;
+    }
+}
+

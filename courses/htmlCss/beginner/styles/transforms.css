@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-flow:row wrap;
+    gap:100px;
+    margin-top:100px;
+    margin-left:100px;
+}
+.box1,.box2,.box3,.box4,.box5,.box6{
+    height: 100px;
+    width: 100px;
+    color:white;
+    background-color: tomato;
+    font-weight: bolder;
+    text-align: center;
+    padding:50px;
+    line-height: 100px;
+    font-size: 2rem;
+
+}
+
+.box1{
+    /* transform: rotate(0.25turn); */
+    transform: rotate(-120deg);
+}
+.box2{
+    transform: scale(0.5,1);
+    /* transform: scale(0.5); */
+}
+
+.box3{
+  /*   transform: translate(-120px); */
+  transform: translate(0px,-90px);
+}
+
+.box4{
+    position: relative;
+    /* transform:skew(20deg); */
+    transform: skew(-10deg,-35deg) scale(0.8) rotate(30deg);
+
+}
+.box4::after{
+    content:"Top";
+    background-color: #0ab2d3;
+    height: 40%;
+    top:0;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    /* you can use transform: translate(-50%) to center sth in middle*/
+}

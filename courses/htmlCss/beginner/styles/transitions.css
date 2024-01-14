@@ -1,0 +1,179 @@
+
+@keyframes BoxQ1 {
+    0%   {background-color: #b50606;left:0px;top:0px;}
+    25%  {background-color: #0673bc; color:aliceblue; left:200px;top:0px}
+    50%  {background-color: #0404afcb; color:red; left:200px;top:200px;}
+    100% {background-color: green;left:0px;top:200px;}
+  /*   from{
+        background-color: tomato;
+    }
+    to{
+        background-color: #711606;
+        color:#fff;
+        transform:scale(0.8);
+    } */
+    
+}
+.box1{
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 100px;
+    position: relative;
+
+    animation-name: BoxQ1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  /*   animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+   
+    animation-fill-mode: backwards;
+ /*    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+
+
+
+    /* The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+The animation-direction property can have the following values:
+
+normal - The animation is played as normal (forwards). This is default
+reverse - The animation is played in reverse direction (backwards)
+alternate - The animation is played forwards first, then backwards
+alternate-reverse - The animation is played backwards first, then forwards */
+
+
+/* The animation-timing-function property specifies the speed curve of the animation.
+The animation-timing-function property can have the following values:
+
+ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - Specifies an animation with the same speed from start to end
+ease-in - Specifies an animation with a slow start
+ease-out - Specifies an animation with a slow end
+ease-in-out - Specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function */
+
+
+
+/* animation-fill-mode	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both) */
+
+
+
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: moveRight 2s ease-in-out infinite
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }}
+
+
+    
+    .btn {
+        padding: 10px 20px;
+        margin:90px;
+        font-size: 16px;
+        background-color: #27ae60;
+        color: #fff;
+        border:none;
+        cursor: pointer;
+        transition: background-color 0.5s ease-in-out;
+    }
+    
+    .btn:hover {
+        background-color: #043d1c;
+    }
+    
+
+/* Keyframes (animation dance moves!) */
+@keyframes spin {
+    0% { transform: translate(40px,0px) }
+    100% { transform: scale(1.3); }
+  }
+  
+  /* Ball properties and animation settings */
+  .ball {
+    margin:40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+
+  .equalizer{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+  }
+  .equalizer>div{
+    background-color: tomato;
+    width:50px;
+    height: 30px;
+  
+  }
+  .eq1{
+    animation: musicEqualizer 0.95s linear infinite backwards;
+  }
+  .eq2{
+    animation: musicEqualizer 0.87s ease-in infinite backwards;
+  }
+  .eq3{
+    animation: musicEqualizer 0.7s ease-in-out infinite both;
+  }
+
+  @keyframes musicEqualizer {
+   0%{
+    width: 90px;
+   }
+   10%{
+    width: 83px;
+   }
+    20%{
+        width: 80px;
+    }
+    30%{
+        width: 78px;
+    }
+    40%{
+        width: 70px;
+    }
+    50%{
+        width: 110px;
+    }
+    55%{
+        width: 200px;
+    }
+    65%{
+        width: 150px;
+    }
+    70%{width: 45px;}
+    80%{width: 0%;}
+    100%{width: 5%;}
+  }
+
+  
+

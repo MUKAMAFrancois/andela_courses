@@ -1,0 +1,29 @@
+
+.left-bar{
+    position: fixed;
+    z-index: 200;
+    bottom: 0;
+    width: 110px;
+    left: 0;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-right-color: gray;
+    border-right-style: solid;
+    flex-shrink:0;
+    max-height: 800px;
+    background-color: rgb(112, 146, 180);
+
+
+}
+.onepart-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.image-left{
+    width: 40px;
+}

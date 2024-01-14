@@ -1,0 +1,85 @@
+<!-- Let's continue from GETINPUT.HTML-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        DELETE ELEMENT
+        </title>
+    </head>
+    <body>
+        <input id="text_added" type="text"/>
+        <input id="date-picker" type="date"/>
+        <button onclick="addTask();">Add Task</button>
+
+        <div id="add-here-todo"></div>
+
+        <script>
+            var todos=[
+            {name:'Wake up',
+            time:'2023-14-01',
+            id:'id1'
+            }
+            ];
+            //addTask() 
+            function addTask(){
+                // grab Task name
+                const text_box=document.getElementById('text_added');
+                const title=text_box.value;
+                // grab the date
+                const datePicker=document.getElementById("date-picker");
+                let dueDate=datePicker.value;
+              
+                var id=''+ new Date().getTime();// unique id, make it a sring
+                todos.push({
+                    name:title,
+                    time:dueDate,
+                    id:id
+                });
+                render(); // render() on the html page
+            }
+            // now we need to render an object, within forEach
+            function render(){
+                // 
+                document.getElementById('add-here-todo').innerHTML=" ";// reset the list
+                todos.forEach(function (item){
+                    let element=document.createElement('div');
+                    element.innerText=item.name + " " + item.time;
+                    //kwandika muri div noneho, instead of body-- we use div's id
+                    let todoList=document.getElementById('add-here-todo');
+                    todoList.appendChild(element);
+
+                      // delete button
+                const deleteButton=document.createElement('button');// create button
+                deleteButton.innerText='Delete';
+                element.appendChild(deleteButton);
+                //css
+                deleteButton.style='margin-left:16px; color:white; margin-bottom:6px;background-color:blue';
+                // functionality of Delete button
+                // using DOM
+                deleteButton.onclick=deleteTask;// a function deleteTask
+                deleteButton.id=item.id
+                })
+            }
+
+            function deleteTask(event){
+                const deleteButton=event.target;
+                const idTodelete=deleteButton.id;
+                
+            }
+
+           todos=todos.filter(function(item){
+                // If the id of this todo matches idToDelete, return False (remove from an array)
+                // For everything else, return true
+
+                if (item.id===idTodelete){
+                    return false;
+                }else{
+                    return true;
+                }
+                render();
+            });
+          
+
+        </script>
+    </body>
+</html>

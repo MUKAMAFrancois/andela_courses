@@ -1,0 +1,90 @@
+.header{
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(254, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    z-index: 200;
+}
+.left-part{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 10px;
+    
+}
+.humberg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.youtube-logo{
+    width: 120px;
+    margin-left: 20px;
+    height: 70px;
+
+}
+
+/*Middle section*/
+.middle-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex: 1;
+   max-width: 600px;
+}
+input{
+    flex: 1;
+    padding-left: 10px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid rgb(221, 219, 219);
+
+  /*  border-color: rgb(221, 219, 219);
+    border-style:solid;*/
+    width: 0;
+}
+.search-icon{
+    width: 60px;
+    height: 60px;
+    border-color: rgb(221, 219, 219);
+    height: 50px;
+    border-style:solid;
+    margin-left: -1px;
+
+}
+.voice-search-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(188, 185, 185);
+    margin-left: 20px;
+
+}
+/*right-section*/
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    flex-shrink: 0;
+    width: 200px;
+}
+.right-section img{
+    width: 40px;
+   margin-right: 20px;
+   position: relative;
+}
+.dog-profile{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/*left-bar*/

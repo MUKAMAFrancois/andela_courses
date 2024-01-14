@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Codes</title>
+</head>
+<body>
+    <input id="input-text" type="text"/>
+    <input id="date_input" type="date"/>
+    <button onclick="add_Task();">Add Task</button>
+    <div id="insert_here"></div>
+    <script>
+        //grab input
+        let tasks=[{
+            name:'Go',time:'2023-01-12'
+        }];
+        function add_Task(){
+            var input_text=document.getElementById("input-text");
+            var value=input_text.value;
+             //grab date
+             let date_time=document.getElementById('date_input');
+             var changed=date_time.value;
+
+            tasks.push({
+                name:value,
+                time:changed
+            });
+            render();
+        }
+        function render(){
+            document.getElementById("insert_here").innerHTML=" ";
+            tasks.forEach(function (item){
+               let element=document.createElement('div');
+                element.innerText=item.name + " " + item.time;
+                //display in div
+                var display=document.getElementById('insert_here');
+                display.appendChild(element);
+
+
+            })
+        }
+
+    </script>
+</body>
+</html>

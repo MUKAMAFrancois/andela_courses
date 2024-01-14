@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+
+<!--The flex Box is made up of MAin axis and cross Axis:  Main Axis is defined by 
+flex-direction [can take column, row, c/r reverse] 
+
+-->
+
+<style>
+  
+</style>
+<body>
+    <div style="display: flex;flex-direction:row">
+        <div style="background-color: lightblue;">One Div</div>
+        <div style="background-color: lightpink;">Two Div</div>
+    </div>
+
+    <div style="margin-top: 30px;display:flex;">
+        <div style="background-color: lightblue; width:200px;">200px</div>
+        <div style="background-color: lightpink;flex:1">flex 1</div>
+        <div style="background-color:lightgreen;flex:2">flex2</div>
+    </div>
+
+
+
+    <div style="margin-top: 30px;display:flex;">
+        <div style="background-color: lightblue; width:200px;">200px</div>
+        <div style="background-color: lightpink;flex:1">flex 1</div>
+        <div style="background-color:lightgreen;flex:2">flex2</div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  ">
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+    ">100px</div>
+    <div style="
+      background-color: lightpink;
+      width: 100px;
+    ">100px</div>
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+    ">100px</div>
+  </div>
+
+<!-- Justify content aligns [horizontally] can take (start, space-between, end,)-->
+
+  
+  <div style="
+  margin-top: 30px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+">
+  <div style="
+    background-color: lightblue;
+    width: 100px;
+  ">100px</div>
+  <div style="
+    background-color: lightpink;
+    width: 100px;
+  ">100px</div>
+  <div style="
+    background-color: lightblue;
+    width: 100px;
+  ">100px</div>
+</div>
+<!-- Align-items aligns [vertically] (can take: end, center, or start) property helps us to not occupy full space-->
+
+<div style="
+  margin-top: 30px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+">
+  <div style="
+    background-color: lightblue;
+    width: 100px;
+  ">100px</div>
+  <div style="
+    background-color: lightpink;
+    width: 100px;
+  ">100px</div>
+  <div style="
+    background-color: lightblue;
+    width: 100px;
+  ">100px</div>
+</div>
+
+
+
+
+  
+
+</body>
+</html>

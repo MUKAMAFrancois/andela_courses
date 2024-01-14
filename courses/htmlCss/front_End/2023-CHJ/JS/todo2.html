@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo2</title>
+</head>
+<body>
+    <!--We have used a lot of codes in todo1, lets focus on functions-->
+    <button>press me</button>
+    <script>
+        let task1='Go to the city';
+        let task2="shopping";
+        let task3="Take a bus";
+        function addTodo(item){
+            let element=document.createElement('div');
+            element.innerText=item;
+            document.body.appendChild(element);
+        }
+        addTodo(task1);
+        addTodo(task2);
+        addTodo(task3);
+        // this code is short and clear.
+    </script>
+</body>
+</html>

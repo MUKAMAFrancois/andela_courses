@@ -1,0 +1,52 @@
+<!-- Let's continue from GETINPUT.HTML-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DATE PICKER
+        </title>
+    </head>
+    <body>
+        <input id="text_added" type="text"/>
+        <input id="date-picker" type="date"/>
+        <button onclick="addTask();">Add Task</button>
+
+        <div id="add-here-todo"></div>
+
+        <script>
+            var todos=[
+            {
+                name:'Bed-time',
+                time:'2023-01-14'
+            }
+            ];
+            //addTask() 
+            function addTask(){
+                const text_box=document.getElementById('text_added');
+                const title=text_box.value;
+                // grab the date
+                const datePicker=document.getElementById("date-picker");
+                let dueDate=datePicker.value;
+
+                todos.push({
+                    name:title,
+                    time:dueDate
+                });
+                render(); // render() on the html page
+            }
+            // now we need to render an object, within forEach
+            function render(){
+                // 
+                document.getElementById('add-here-todo').innerHTML=" ";// reset the list
+                todos.forEach(function (item){
+                    let element=document.createElement('div');
+                    element.innerText=item.name + " " + item.time;
+                    //kwandika muri div noneho, instead of body-- we use div's id
+                    let todoList=document.getElementById('add-here-todo');
+                    todoList.appendChild(element);
+                })
+            }
+
+        </script>
+    </body>
+</html>

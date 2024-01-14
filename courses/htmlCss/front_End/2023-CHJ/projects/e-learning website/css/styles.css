@@ -1,0 +1,25 @@
+*{
+    font-family: inika;
+}
+.nav__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+    background-color: rgb(127, 9, 127);
+    color: white;
+    
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.nav__menu{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 30px;
+}
