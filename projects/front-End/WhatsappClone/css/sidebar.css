@@ -1,0 +1,27 @@
+.side-bar{
+    width: 80px;
+    height: 100vh;
+    background-color: #ededed;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 12px;
+  
+  }
+  .single-item{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    flex-flow: column wrap;
+  
+  }
+
+  .single-item>img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: cover;
+  
+  }
