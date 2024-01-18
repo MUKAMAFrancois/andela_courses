@@ -17,8 +17,16 @@
         <input type="password" name="password" id="" placeholder="Password">
 
         <a href="">Forgot Password?</a>
-        <button class="login-btn">Login</button>
+        <button class="login-btn" onclick="processLogin()">Login</button>
         <p>Not a member? <a href="">Signup</a></p>
     </div>
+
+    <script>
+      
+        function processLogin(){
+            const loginButton = document.querySelector('.login-btn');
+            loginButton.style.backgroundColor ='#ccc';
+        }
+    </script>
 </body>
 </html>

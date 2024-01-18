@@ -1,0 +1,93 @@
+/* 
+general.html
+*/
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* side-bar */
+
+
+.side-bar{
+    width: 80px;
+    height: 100%;
+    background-color: #dedede;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 12px;
+  
+  }
+  .single-item{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    flex-flow: column wrap;
+  
+  }
+
+  .single-item>img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    object-fit: cover;
+  
+  }
+
+  .three-dots-mac{
+    object-fit: contain;
+    padding: 0;
+  }
+
+
+.question-mark{
+    margin-bottom:20px;
+    border: 1px gray solid;
+    border-radius: 80%;
+    padding-top:4px;
+    padding-bottom: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.question-mark>img{
+    object-fit: cover;
+    width: 16px;
+    
+}
+  .side-bar-profile{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .profile-picture-left-bottom{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .profile-picture-left-bottom::after{
+    content: '';
+    background-color: green;
+    width: 4px;
+    height: 4px;
+  }
+

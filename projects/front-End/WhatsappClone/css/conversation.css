@@ -136,24 +136,7 @@ align-items: center;
 margin-bottom: 10px;
 }
 
-.search-container{
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #fff;
-height: 30px;
-border-radius: 5px;
-margin-left: 20px;
-margin-right: 20px;
-}
-.search-container>input{
-border:none;
-outline: none;
-padding-left: 10px;
-font-size: 15px;
-font-weight: 500;
 
-}
 
 .day-to-day-conversation{
 padding-top:90px;
