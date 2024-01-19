@@ -5,7 +5,7 @@
     flex-flow: column nowrap;
     height: 100%;
     position: relative;
-    background-color: #dedede;
+    background-color: #efe9e9;
     width: 300px;
     overflow: hidden;
     border-right: 1px gray solid;
@@ -14,10 +14,10 @@
 .chats-header{
     display: flex;
     height: 80px;
-    background-color: #5ff8fa;
+    background-color: #f4f2f2;
     flex-flow: column nowrap;
     justify-content: center;
-    width: 300px;
+    width: 290px;
     position: fixed;
     z-index: 100;
 }
@@ -31,7 +31,6 @@
 .write-button,.drop-down-left{
 border:none;
 height: 20px;
-background-color: #fff;
 margin-left:20px;
 }
 
@@ -64,7 +63,7 @@ height: 18px;
 
     .search-container>button{
         border:none;
-        background-color: #f1e9e9;
+        background-color:#fff;
         outline: none;
         margin-right:5px;
         width: 16px;

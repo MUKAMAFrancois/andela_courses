@@ -1,0 +1,303 @@
+.conversation-right-section{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    bottom: 0;
+    top:0;
+    right: 0;
+    width: calc(100% - 370px);
+    position: fixed;
+    border-left: grey solid 1px;
+    padding-bottom: 70px;
+    
+
+}
+.conversation-header {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+height: 120px;
+background-color: #eeecec;
+z-index: 100;
+right: 0;
+width: 100%;
+padding-top: 20px;
+border-bottom: #c4c0c0 solid 1px;
+
+}
+
+.current-person-in-talk{
+display:flex;
+margin-left:50px;
+}
+
+
+.profile-image{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+object-fit: cover;
+
+}
+
+.profile-details{
+margin-left:10px;
+}
+.online-status{
+font-size:12px;
+font-weight: 500;
+color:#808080;
+margin-top:0;
+}
+
+.online-status::before{
+content:'';
+background-color: #01ff01;
+width: 7px;
+height: 7px;
+display: inline-block;
+margin-right: 2px;
+border-radius: 10px;
+}
+
+.chat-name{
+font-size: 18px;
+font-weight: 500;
+color: #000;
+font-weight: bolder;
+
+}
+
+.header-right-icons{
+display: flex;
+justify-content: end;
+margin-right: 40px;
+width: 220px;
+justify-content: space-between;
+}
+
+.header-right-icons>button, .icon-bottom{
+background-color: #fff;
+border: none;
+height: 35px;
+width: 35px;
+margin-left:2px;
+margin-right: 2px;
+}
+
+.header-right-icons>button:hover, .icon-bottom:hover{
+background-color: #888;
+cursor: pointer;
+transform: scale(1.02);
+}
+
+.image-button-left, .image-bottom-icon{
+width: 24px;
+height: 24px;
+object-fit: cover;
+padding:2px;
+
+}
+
+.image-button-left{
+width: 24px;
+height: 24px;
+object-fit: cover;
+padding:2px;
+}
+
+
+
+.daily-messages{
+display: flex;
+position: relative;
+}
+
+
+
+.share-mac-book{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 300px;
+}
+
+.mac-book-pc{
+    height: 220px;
+    width:220px;
+    object-fit: cover;
+    margin:10px;
+    border-radius: 10px;
+}
+
+.share-icon{
+    width: 20px;
+    height: 20px;
+    margin:5px;
+    background-color: white;
+    border-radius: 2px;
+}
+.time-photo{
+    color:grey;
+    position: absolute;
+    font-size: 12px;
+    bottom: 6px;
+    right: 0;
+}
+
+
+
+
+.conversation-inputs-bottom {
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+justify-content: space-between;
+position: fixed;
+bottom: 0;
+right: 0;
+/* left: 370px; */
+height: 80px;
+background-color: #eeecec;
+border-top: #c4c0c0 solid 1px;
+width: calc(100% - 370px); 
+}
+
+.conversation-inputs-bottom>input{
+
+padding:8px;
+border:1px solid gray;
+border-radius: 16px;
+margin-left:10px;
+margin-right: 16px;
+flex:1;
+margin-right: 50px;
+}
+
+.emoji-btn{
+margin-left:30px;
+margin-right: 20px;
+}
+
+.add-btn{
+margin-right: 20px;
+}
+.mic-btn{
+margin-right: 30px;
+}
+
+.daily-messages{
+
+position:relative;
+width: 100%;
+padding: 50px;
+overflow-y: auto;
+display: flex;
+flex-flow: column nowrap;
+background-color: #dedede;
+}
+
+.message-box {
+position:relative;
+display: flex;
+width:100%;
+margin: 5px 0;
+}
+
+.message-box p {
+position:relative;
+right: 0;
+text-align: right;
+max-width: 65%;
+padding: 12px;
+background: #dcf8c6;
+border-radius: 10px;
+font-size: 0.9em;
+}
+
+
+/*.message-box.my-message p::before {
+content : '';
+position: absolute;
+top: 0;
+right: -12px;
+width: 20px;
+height: 20px;
+background: linear-gradient(135deg, #dcf8c6 0%, #dcf8c6 50%, transparent 50%, transparent);
+} */
+
+.message-box p span {
+display: block;
+margin-top: 5px;
+font-size: 0.8em;
+opacity: 0.5;
+}
+
+.my-message {
+justify-content: flex-end;
+}
+
+.friend-message p {
+background: #fff;
+}
+
+.friend-message {
+justify-content: flex-start;
+
+}
+
+.chat-container .my-message i {
+color: yellow;
+}
+
+/*.message-box.friend-message::before {
+content : '';
+position: absolute;
+top: 0;
+left: -12px;
+width: 20px;
+height: 20px;
+background: linear-gradient(225deg, #fff 0%, #fff 50%, transparent 50%, transparent);
+} */
+
+.encryption-message{
+position: absolute;
+display: flex;
+flex-direction: row;
+background-color: #e7e7b4;
+color:#000;
+align-items: center;
+top:10px;
+width: 70%;
+height: 50px;
+left:80px;
+border-radius: 10px;
+
+}
+.encryption-message>img{
+width: 30px;
+height: 30px;
+object-fit: cover;
+}
+
+.today{
+position: absolute;
+background-color: #fff;
+left:200px;
+top:70px;
+padding:3px;
+border-radius: 5px;
+
+}
+.encryption-message p a{
+text-decoration: none;
+font-weight: 700;
+}
+.encryption-message p a:hover{
+text-decoration: underline;
+}
+
+.messages{
+margin-top:60px;
+}

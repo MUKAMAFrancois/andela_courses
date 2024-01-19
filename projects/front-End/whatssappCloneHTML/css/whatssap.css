@@ -11,6 +11,7 @@ general.html
 body{
     display: flex;
     min-height: 100vh;
+    
 }
 
 
@@ -20,7 +21,7 @@ body{
 .side-bar{
     width: 80px;
     height: 100%;
-    background-color: #dedede;
+    background-color: #f4f2f2;
     position: fixed;
     z-index: 100;
     left: 0;
@@ -35,6 +36,10 @@ body{
     padding: 8px;
     flex-flow: column wrap;
   
+  }
+  .single-item:hover{
+    background-color: #c2bdbd;
+    cursor: pointer;
   }
 
   .single-item>img{
@@ -53,13 +58,11 @@ body{
 
 .question-mark{
     margin-bottom:20px;
-    border: 1px gray solid;
     border-radius: 80%;
     padding-top:4px;
     padding-bottom: 4px;
     padding-left: 0;
-    padding-right: 0;
-    background-color: #fff;
+    padding-right: 0; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,12 +85,19 @@ body{
     height: 40px;
     border-radius: 20px;
     object-fit: cover;
+  
   }
 
-  .profile-picture-left-bottom::after{
+  .left-image-bottom::after{
     content: '';
-    background-color: green;
-    width: 4px;
-    height: 4px;
+    background-color: rgb(18, 243, 18);
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    bottom:6px;
+    right: 0;
+    border-radius: 10px;
+    
   }
 
