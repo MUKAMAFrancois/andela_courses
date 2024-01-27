@@ -6,9 +6,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Images</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<style>
+body{
+    min-height: 100vh;
+    font-family: cursive;
+    /* background-image: linear-gradient(to right,steelblue,rgba(128, 0, 128, 0.569),rgba(0, 128, 0, 0.548),#fff);
+    */
+
+}
+.hero{
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../images/lamp3.jpeg');
+    /* we can change the postion of background image */
+    /* background-position: center; */
+    /* background-position: bottom left; */
+    background-position:right;
+    background-size: cover;
+    background-repeat: repeat;
+    color:white;
+
+
+}
+.nowrap{
+    white-space: nowrap;
+}
+.h1{
+    font-size: 200%;
+    text-shadow: 4px 5px 5px #f00;
+
+}
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.example img{
+    width: 25%; /* percentage widths for responsive images */
+    height: auto;
+    border: solid red 1px;
+    display: block;
+}
+.profile-pic-figure{
+    width: 35%;
+}
+.profile-pic-figure img{
+    width: 100%;
+    height: auto;
+    min-width:100px; 
+    border: 3px solid #069bac;
+
+
+}
+
+.clip{
+    font-weight: 800;
+    font-size: 15rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url('../images/coding.jpg');
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    /* color:hsla(0%, 0%, 0%, 0.2); */
+}
+</style>
 <body>
+    <section class="example">
+        <p>
+            <img src="../images/plant.jpg" alt="">
+            Hello, This is my pargraph...
+        </p>
+
+    </section>
+
+    <section class="hero">
+        <figure class="profile-pic-figure" title="My profile">
+            <img src="../images/working @home.webp" alt="" srcset="">
+            <figcaption class="offscreen">Working at Home!</figcaption>
+        </figure>
+        <h1 class="h1">Hello, <span class="nowrap">I am John!</span></h1>
+    </section>
+    
+    <section class="background-images">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, ducimus.</p>
+        <p class="clip">
+            Mukama
+        </p>
+
+
+    </section>
  
 </body>
 
