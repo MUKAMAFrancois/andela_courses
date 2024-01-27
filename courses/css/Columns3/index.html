@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Columns</title>
+</head>
+<style>
+    body{
+        font-size: 1.5rem;
+        font-family: cursive;
+    }
+    .columns{
+    /* column-count: 3;
+    column-width: 250px;
+     */
+    columns: 3 250px;
+
+    column-gap: 2rem;
+    column-rule: double 3px #333;
+
+    }
+
+    .columns p{
+        margin-top:0;
+    }
+
+    .columns h2{
+        margin-top:0;
+        padding:1rem;
+        background-color: #333;
+        color: #fff;
+        break-inside: avoid; /* Avoiding the separation of this section up on responsiveness */
+
+    }
+
+    .quote{
+        color:#078576;
+        font-weight: 700;
+        text-align: center;
+        column-span: all;
+        padding-top:1rem;
+        padding-bottom: 1rem;
+    }
+    .quote span{
+        color:#9f0808;
+        white-space: nowrap;
+    }
+   
+</style>
+<body>
+
+    <main>
+        <section class="columns">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam accusamus iure quae assumenda voluptatem dicta non aut reiciendis, ex rem?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, recusandae. Tenetur dicta quisquam aspernatur amet perferendis suscipit omnis, aliquid enim?</p>
+            <h2>Next Topic</h2>
+            <p style="color:green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptates debitis ut ipsa minima ab aliquid esse cupiditate provident.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam accusamus iure quae assumenda voluptatem dicta non aut reiciendis, ex rem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit quae doloribus est aut iusto excepturi qui illum autem nam.</p>
+            <div class="quote">&#8220;AnyOne can Know, The Point is To Understand &#8221; <span>&#8212;Albert Einstein</span></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, recusandae. Tenetur dicta quisquam aspernatur amet perferendis suscipit omnis, aliquid enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptates debitis ut ipsa minima ab aliquid esse cupiditate provident.</p>
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias magnam quidem quia et. Dicta fugiat eveniet vel voluptatem. Minus ducimus sint dicta molestias nobis fugit neque, assumenda asperiores maxime voluptatem ut at praesentium numquam veritatis veniam inventore? Praesentium, quo?</p>
+    </main>
+    
+</body>
+</html>

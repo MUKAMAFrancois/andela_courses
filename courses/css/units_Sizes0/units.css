@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+border: double purple 5px;
+text-align: center;
+width:30%;
+padding:1rem;
+margin:2rem auto; /* centering */
+outline: solid red 4px;
+/* outline-offset: 10px; */
+outline-offset: -20px;
+}
+
+
+.circle{
+    margin:3rem auto; /*It will center it, left and right. */
+    border:solid 4px green;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    outline: solid #068bac 10px;
+    outline-offset: -20px;
+    background-color: #b4abab;
+    
+    }
+    
+    .circle:hover{
+        width: 204px;
+        height: 204px;
+        border-radius: 102px;
+        cursor: pointer;
+    }
+
+    
+.lorem{
+    margin: 1rem;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+
+/* ================================================================ */
+
+
+.consectetur{
+    text-decoration: none;
+    color:#068bac;
+}
+
+.consectetur:visited{
+    color:#800080;
+}
+.consectetur:hover, .consectetur:focus{
+    color:#0b49ec;
+}
+
+
+.architecto{
+    text-decoration: none;
+    color:#068bac
+}
+
+.architecto:active{
+    color:#bf1313;
+
+}
+
+/*===============================================================*/
+ol{
+    list-style-type:lower-greek;
+    text-align: center;
+    list-style-position: inside;
+
+}
+
+ul{
+    line-height: 1.6;
+    color:#fd2904;
+    /* list-style-position: outside;
+    list-style-type: square; */
+
+
+    /* list-style: inside square; */
+    text-align: center;
+    /* list-style-image: url('../images/right_arrow.jpeg'); */
+}
+
+ul li:nth-child(2){
+    color:#000;
+}
+ul::marker{
+    content:"Only $5";
+    color:green;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}

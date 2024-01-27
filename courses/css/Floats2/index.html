@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Floats</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        margin:1.5rem;
+    }
+    .block{
+        color:white;
+        background-color: #000;
+        width: 30vw;
+        height: 25vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-float{
+        float: left;
+        margin-right: 1rem;
+    }
+
+    .right-float{
+        float: right;
+        margin-left: 1rem;
+    }
+
+    section{
+        background-color: bisque;
+        border:1px solid #333;
+        /* overflow: auto; */
+        display: flow-root;
+        padding:1rem;
+    }
+</style>
+<body>
+
+    <main>
+        <section>
+            <div class="block left-float">Float</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut.</p>
+        </section>
+            
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Non voluptates repellendus sequi aliquid quo enim, 
+            eligendi perferendis repellat odio cupiditate?</p><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, ullam porro? Perferendis quam deserunt, sapiente eveniet id accusantium nam? Voluptatem, tempore earum perferendis ipsa, labore modi fuga aspernatur blanditiis praesentium reiciendis amet rem aliquid natus adipisci neque illum a corrupti aperiam vel illo? Placeat quibusdam repellat delectus perferendis maxime temporibus!</p><br>
+         <section>
+            <div class="block right-float">Floating</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit nihil id ipsam. Itaque aut nobis id autem excepturi recusandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis doloremque sit quaerat tenetur aspernatur distinctio.</p>
+         </section>
+        
+    </main>
+    
+</body>
+</html>
