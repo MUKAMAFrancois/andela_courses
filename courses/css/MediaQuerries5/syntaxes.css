@@ -1,0 +1,130 @@
+/* 
+SYNTAX: 
+
+@media [media-type] ([media-feature]) {
+    
+  } 
+  
+  @media screen{
+  }
+
+
+@media not|only mediatype and (media feature) and (media feature) {
+  CSS-Code;
+}
+
+
+
+  @media screen (min-width: 320px) and (max-width: 768px) {
+    .element {
+    
+    }
+  }
+ With and operator can also be replaced by comma. ,
+
+
+
+body {
+  background-color: #fff;
+}
+
+@media (min-width: 30em) and (max-width: 80em) {
+  body {
+    background-color: purple;
+  }
+}
+
+
++++++++++++ Simpler Syntax +++++++++++
+
+@media (30em <= width <= 80em) {
+ 
+}
+*/
+
+
+
+
+/* Default styles for all devices */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Media query for devices with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Default styles for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    img {
+        max-width: 80%;
+    }
+}
+
+
+
+
+
+
+
+/* Default styles for navigation */
+nav {
+    display: block;
+}
+
+/* Media query for smaller screens, hide navigation */
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+}
+
+
+
+
+
+/*  Landscape and Portrait: */
+
+/* Default styles for landscape:  */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Media query for portrait */
+@media only screen and (orientation: portrait) {
+    body {
+        background-color: #fff;
+    }
+}
+
+
+
+
+
+
+
+/* Default styles for print */
+@media print {
+    body {
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+  
+
+
