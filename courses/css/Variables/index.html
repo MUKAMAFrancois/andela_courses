@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+</head>
+<body>
+
+    <!-- CSS Variables (Custom Properties):
+Introduction:
+CSS Variables, also known as Custom Properties, are entities defined by CSS authors that contain specific values to be reused throughout a document. They bring the benefits of modularity and maintainability to your stylesheets.
+
+Declaration and Usage:
+To declare a CSS variable, you use the -- prefix followed by the variable name: -->
+
+
+<!-- Scope:
+CSS Variables are scoped to the element they are defined on. 
+The :root selector is commonly used to define global variables 
+applicable to the entire document. -->
+
+
+<!-- Dynamic Values:
+CSS Variables allow dynamic values. You can change a variable's value using JavaScript,
+ providing a powerful way to update styles dynamically. 
+
+:root {
+  --primary-color: #3498db;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.dark-mode {
+  --primary-color: #2c3e50;
+}
+In this example, when an element with the class dark-mode 
+is present, it dynamically changes the --primary-color variable.
+-->
+    
+</body>
+</html>

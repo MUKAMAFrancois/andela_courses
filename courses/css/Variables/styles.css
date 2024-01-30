@@ -1,0 +1,36 @@
+/* :root {
+  --primary-color: #3498db;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+ */
+
+
+ :root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --spacing-unit: 1rem;
+    --max-width: 800px;
+  }
+  
+  body {
+    color: var(--primary-color);
+  }
+  
+  .accent {
+    background-color: var(--secondary-color);
+  }
+
+  
+  .element {
+    margin: var(--spacing-unit) 0;
+  }
+ 
+  
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
