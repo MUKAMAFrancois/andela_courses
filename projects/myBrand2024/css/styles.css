@@ -9,9 +9,9 @@
 
 }
 
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 
 
 /* -------------------Home----------------------------- */
@@ -81,7 +81,7 @@ nav h2 span{
     color:#DB0C0C;
 }
 
-.signIn-link,.more-on-me-link,.hire-me-btn,.more-skills-link{
+.signIn-link,.more-on-me-link,.hire-me-btn,.more-skills-link,.see-more-portifo{
     color: white;
     background: #DB0C0C;
     text-decoration: none;
@@ -90,7 +90,7 @@ nav h2 span{
     border:none;
     transition: transform 0.6s;
 }
-.signIn-link a,.more-on-me-link a,.hire-me-btn a,.more-skills-link a{
+.signIn-link a,.more-on-me-link a,.hire-me-btn a,.more-skills-link a,.see-more-portifo a{
     color:#fff;
     font-family: 'Inknut Antiqua', serif;
     text-decoration: none;
@@ -98,12 +98,12 @@ nav h2 span{
   
 }
 
-.signIn-link:hover,.more-on-me-link:hover,.hire-me-btn:hover,.more-skills-link:hover{
+.signIn-link:hover,.more-on-me-link:hover,.hire-me-btn:hover,.more-skills-link:hover,.see-more-portifo:hover{
     background: #fff;
     transform: scale(1.07);
 }
 
-.signIn-link a:hover,.more-on-me-link a:hover,.hire-me-btn a:hover,.more-skills-link a:hover{
+.signIn-link a:hover,.more-on-me-link a:hover,.hire-me-btn a:hover,.more-skills-link a:hover,.see-more-portifo a:hover{
     color:#DB0C0C;
 }
 
@@ -143,7 +143,7 @@ nav h2 span{
 
 #about-me{
     background-color: #C4BCB9;
-    padding:80px 5%;
+    padding:50px 5%;
 }
 
 .container-about-me .row{
@@ -152,15 +152,15 @@ nav h2 span{
    
 }
 
-.container-about-me h1, .container-my-skills h1,.container-portifo h1{
-    font-size: 32px;
+.container-about-me h1, .container-my-skills h1,.container-portifo h1, .blogs-container h1,.contact-container h1{
+    font-size: 28px;
     font-family: 'Roboto', serif;
     font-weight: 600;
     margin-bottom: 60px;
     text-align: center;
 }
 
-.container-about-me h1 hr, .container-my-skills h1 hr,.container-portifo h1 hr{
+.container-about-me h1 hr, .container-my-skills h1 hr,.container-portifo h1 hr, .blogs-container h1 hr,.contact-container h1 hr{
     width: 40px;
     background-color:#DB0C0C;
     height: 12px;
@@ -168,9 +168,9 @@ nav h2 span{
     margin-right: 5px;
     margin-bottom: 5px;
 }
-.container-about-me h1 span,.container-my-skills h1 span,.container-portifo h1 span{    
+.container-about-me h1 span,.container-my-skills h1 span,.container-portifo h1 span, .blogs-container h1 span,.contact-container h1 span{    
     color: #DB0C0C;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: bolder;
 }
 .row .col-left{
@@ -228,7 +228,7 @@ nav h2 span{
     width:80%;
 }
 #my-skills{
-    padding:80px 5%;
+    padding:50px 5%;
     background-color: #C4BCB9;
 }
 
@@ -277,7 +277,7 @@ nav h2 span{
 
 
 #my-portifolio{
-    padding:80px 5%;
+    padding:50px 5%;
     background-color: #C4BCB9;
 }
 
@@ -391,4 +391,130 @@ nav h2 span{
 
 .single-portifo:hover .layer{
     height: 100%;
+}
+
+
+.see-more-portifo{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* =====================Blogs==================== */
+
+#my-blogs{
+    padding:50px 5%;
+    background-color: #C4BCB9;
+}
+
+
+.blog-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap:30px;
+}
+.single-blog{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.6s;
+}
+.single-blog:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.single-blog img{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.single-blog .blog-details{
+    padding:3px 12px;
+}
+.blog-details h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin:20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.blog-details p{
+    font-size: 18px;
+    font-weight: 400;
+    margin:20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    align-items: center;
+
+}
+
+.blog-details p a{
+    color:#DB0C0C;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+.blog-details a:hover{
+    border-bottom: 2px solid #DB0C0C;
+}
+.comments-datePublish{
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+}
+
+.fa-solid{
+    color:#DB0C0C;
+    margin-right: 8px;
+}
+
+/* ================Contact================= */
+
+#contact{
+    padding:50px 5%;
+    background: #C4BCB9;
+}
+
+.contact-details p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'Inknut Antiqua', sans-serif;
+    text-align: justify;
+    align-items: center;
+
+
+}
+form input,form textarea{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border:1px solid #DB0C0C;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+
+.send-message-btn{
+    color: #fff;
+    background-color: #DB0C0C;
+    padding: 3px 12px;
+    font-family: 'Inknut Antiqua', sans-serif;
+    border-radius: 30px;
+    border:none;
+    font-weight: bolder;
+    transition: transform 0.6s;
+}
+
+.send-message-btn:hover{
+    background: #fff;
+    transform: scale(1.03);
+    color:#DB0C0C;
 }
