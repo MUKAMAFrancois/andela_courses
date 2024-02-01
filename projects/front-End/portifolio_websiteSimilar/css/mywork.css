@@ -1,0 +1,106 @@
+#portifolio{
+
+    padding:50px 0;
+
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+}
+.work-list .work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out; /* check its hover down where we defined transform:scale */
+
+}
+
+.work img{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+}
+
+.akar-icons--link-out {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23f10909' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13.5 10.5L21 3m-5 0h5v5m0 6v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5'/%3E%3C/svg%3E");
+  }
+
+  .work .layer{
+    width: 100%;
+    height:0; /* put 0% to hide it by default */
+    background: linear-gradient(rgba(0,0,0,0.5),#00fff7);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.9s ease-in-out; /* check its hover down where we defined height in hover */
+  }
+
+  .layer h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .layer a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .layer a:hover{
+    background: #fff;
+    color: #000;
+  }
+
+  .work:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+  
+  }
+
+  .work:hover .layer{
+    height: 100%;
+    cursor: pointer;
+  }
+.see-more-portifo{
+    margin:50px auto;
+    display: block;
+    width: fit-content;
+   text-decoration: none;
+   padding:10px;
+   font-size: 1.2rem;
+   background: tomato;
+   color:white;
+   border-radius: 10px;
+   border:none;
+}
+
+.see-more-portifo:hover{
+    background: #fff;
+    color: tomato;
+    cursor: pointer;
+    border: 1px solid tomato;
+}
