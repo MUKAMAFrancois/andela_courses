@@ -178,4 +178,44 @@ form input{
 
 
 
-/* ==========================SignUp=========================================== */
+/* ==========================Responsiveness=========================================== */
+
+@media (max-width: 768px){
+    .login-container{
+        width: 90%;
+    }
+    .login-container h1{
+        font-size: 25px;
+    }
+    .input-field{
+        margin-bottom: 20px;
+    }
+    .input-field .fa-solid{
+        font-size: 20px;
+    }
+    form input{
+        font-size: 16px;
+    }
+    .login-button{
+        font-size: 16px;
+    }
+    .forgot-password-link{
+        font-size: 16px;
+    }
+    .or{
+        font-size: 18px;
+    }
+    .another-options p{
+        font-size: 16px;
+    }
+    .social-media-icon img{
+        width: 35px;
+        height: 35px;
+    }
+    .no-account{
+        font-size: 16px;
+    }
+    .no-account a{
+        font-size: 16px;
+    }
+}
