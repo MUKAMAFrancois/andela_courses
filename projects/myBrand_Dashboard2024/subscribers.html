@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Subscribers</title>
     <link rel="stylesheet" href="./css/general.css">
 </head>
 <body>
@@ -67,7 +67,7 @@
                 </div>
             </div>
           </a>
-          <a href="./login.html">
+          <a href="./l">
             
             <div class="single-div">
                 <div class="icon-container">
@@ -82,21 +82,54 @@
         </section>
 
 
-        <section class="right-section">
-          <div class="update-profile-container">
-            <h1>Update your Profile</h1>
-            <form action="">
-              <div class="input-container">
-                <label for="title" class="label">Username:</label>
-                <input type="text" name="title" id="title">
+        <section class="right-section-subscribers">
+
+            <div class="date-range">
+                <div class="date-range-oneDiv">
+                    <label for="datepicker" class="date-range-label">From:</label>
+                    <input type="date" id="datepicker" name="datepicker" value="" min="2024-01-01" max="2030-12-31">
+                </div>
+                <div class="date-range-oneDiv">
+                    <label for="datepicker" class="date-range-label">To:</label>
+                    <input type="date" id="datepicker" name="datepicker" value="" min="2024-01-01" max="2030-12-31">
+                </div>
             </div>
-              <div class="input-container">
-                <label for="image" class="label">Image:</label>
-                <input type="file" name="image" id="image">
+
+            <div class="subs">
+                <div class="total-subs">TOTAL: 123K</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Names</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-02-04</td>
+                            <td>John</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>2024-02-05</td>
+                            <td>Jane Smith</td>
+                            <td>janesmith@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>2024-02-06</td>
+                            <td>Michael Johnson</td>
+                            <td>michaeljohnson@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="back-next-btns">
+                    <button class="back-btn">Back</button>
+                    <button class="next-btn">Next</button>
+                </div>
             </div>
-            </form>
-            <button type="submit" class="save-btn">Save</button>
-          </div>
+           
 
         </section>
     </main>
