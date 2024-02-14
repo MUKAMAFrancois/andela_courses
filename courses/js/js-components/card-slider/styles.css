@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Aref Ruqaa Ink', serif;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.all-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition:transform 0.5s;
+}
+
+.single-card:hover{
+    transform: scale(1.08);
+}
+
+.single-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.single-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.single-card p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.single-card button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.single-card button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* -==========swipper====== */
