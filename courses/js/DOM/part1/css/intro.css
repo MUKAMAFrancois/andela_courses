@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aref Ruqaa Ink', serif;
+
+}
+
+
+
+body{
+    background-color: #f4f4f4;
+    padding:100px 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px #000 solid;
+    border-radius: 20px;
+}
+.input-container{
+    display: flex;
+    margin: 20px 0;
+    flex-basis: 60%;
+
+}
+
+.two-forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.two-forms .search-container{
+    flex-basis: 40%;
+}
+.search-container input{
+    padding:10px;
+    width: 90%;
+}
+.input-container .type-input,#changed-content-item{
+    padding:10px 8px;
+    width: 70%;
+}
+
+.input-container .submit-btn{
+    background-color:#333;
+    color:white;
+    padding:10px;
+    width: 30%;
+
+}
+
+.items-added-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px #000 solid;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.items-added-container>div{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px #000 solid;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-btn{
+    color:#fff;
+    background-color: #8a0808;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.edit-btn{
+    color:white;
+    font-weight: 900;
+    background-color: #0762ec;
+    padding:5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.next-previous,.save-cancel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next-btn,.previous-btn,.save-btn,.cancel-btn{
+    padding:10px 3px;
+    font-weight: 900;
+    margin-top:20px;
+    width: 20%;
+    color:white;
+    cursor: pointer;
+    border:none;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.previous-btn,.cancel-btn{
+    background-color: #333;
+
+}
+.next-btn,.save-btn{
+    background-color: #075807;
+}
+
+.edit-item-dialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    padding:40px 10px;
+    border-radius: 20px;
+    margin:1px auto;
+    width: 40%;
+
+    display: none;  /* Hide all edit-item-dialog initially */
+}
+
