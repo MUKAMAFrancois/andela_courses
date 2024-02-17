@@ -138,6 +138,7 @@ body{
     margin:1px auto;
     width: 40%;
 
-    display: none;  /* Hide all edit-item-dialog initially */
+    display: none;  
+    /* Hide all edit-item-dialog initially */
 }
 
