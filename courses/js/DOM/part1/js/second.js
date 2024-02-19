@@ -1,13 +1,13 @@
-const typeInput =document.querySelector('#type-input');
-const submitBtn =document.querySelector('button[type="submit"]');
-const searchInput=document.querySelector('#search-input');
-const itemsList =document.querySelector('.items-added-container');
-const firstItem=document.querySelector('.list-group-item:first-child');
-const editBtn=document.querySelectorAll('.edit-btn');
-const deleteBtn =document.querySelectorAll('.delete-btn');
-const container =document.querySelector('.container');
-const previousBtn=document.querySelector('.previous-btn');
-const nextBtn=document.querySelector('.next-btn');
+const typeInput =document.querySelector('#type-input'),
+         submitBtn =document.querySelector('button[type="submit"]'),
+         searchInput=document.querySelector('#search-input'),
+         itemsList =document.querySelector('.items-added-container'),
+         firstItem=document.querySelector('.list-group-item:first-child'),
+         editBtn=document.querySelectorAll('.edit-btn'),
+         deleteBtn =document.querySelectorAll('.delete-btn'),
+         container =document.querySelector('.container'),
+         previousBtn=document.querySelector('.previous-btn'),
+         nextBtn=document.querySelector('.next-btn')
 
 
 
@@ -33,6 +33,9 @@ function addItem() {
 }
   
 submitBtn.addEventListener('click',addItem);
+
+
+
 
 function removeItem(clickedItem){
 
@@ -92,9 +95,10 @@ Ensure that the buttons behave appropriately based on the current page number
  (e.g., hiding the Previous button on the first page and hiding the Next button on the last page).
 
 */
+
 let currentPage = 1;
 const itemsPerPage = 3;
-const items = itemsList.querySelectorAll('.list-group-item');
+const items = document.querySelectorAll('.list-group-item');
 const totalPages = Math.ceil(items.length / itemsPerPage);
 
 // Initially hide the Previous button

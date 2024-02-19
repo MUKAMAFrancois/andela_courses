@@ -70,14 +70,14 @@ body{
     border-radius: 30px;
 }
 
-.items-added-container>div{
+.items-added-container .list-group-item{
     margin: 10px 0;
     padding: 10px;
     border: 1px #000 solid;
     border-radius: 10px;
     width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .delete-btn{
@@ -99,7 +99,10 @@ body{
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+    width: 70px;
 }
+
+
 
 
 .next-previous,.save-cancel{
