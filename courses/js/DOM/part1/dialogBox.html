@@ -1,0 +1,23 @@
+<dialog id="myDialog">
+    <p>This is a dialog box.</p>
+    <button id="closeDialog">Close</button>
+</dialog>
+  
+  <button id="openDialog">Open Dialog</button>
+  
+  <script>
+    const dialog = document.getElementById('myDialog');
+    const openDialogButton = document.getElementById('openDialog');
+    const closeDialogButton = document.getElementById('closeDialog');
+  
+    // Open the dialog when the open dialog button is clicked
+    openDialogButton.addEventListener('click', () => {
+      dialog.showModal();
+    });
+  
+    // Close the dialog when the close dialog button is clicked
+    closeDialogButton.addEventListener('click', () => {
+      dialog.close();
+    });
+  </script>
+  

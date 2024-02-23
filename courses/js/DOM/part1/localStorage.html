@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+<body>
+    
+</body>
+
+<h1>LocalStorage</h1>
+<script>
+    const myObj={
+        name:"Mukama",
+        age:25,
+        vision:"SWE"
+    }
+     localStorage.setItem("my_Obj",JSON.stringify(myObj));
+     console.log(localStorage);// {my_Obj: '{"name":"Mukama","age":25,"vision":"SWE"}', length: 1}
+
+     // using your object then.
+     let myObj_deserialized =JSON.parse(localStorage.getItem("my_Obj"));
+     console.log(myObj_deserialized); /* {name: 'Mukama', age: 25, vision: 'SWE'} */
+</script>
+</html>
