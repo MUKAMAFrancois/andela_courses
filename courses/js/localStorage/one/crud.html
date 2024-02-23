@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD#</title>
+    <link rel="stylesheet" href="./styles/crud.css">
+</head>
+<body onload="readData()">
+
+    <div class="container">
+        <div class="form_container">
+            <button type="button" class="add-btn">Add</button>
+            <form action="" class="create_form">
+                <input type="text" class="name" placeholder="Enter your Name">
+                <input type="text" class="email" placeholder="enter your Email">
+                <button type="button" id="create-btn">Create</button>
+            </form>
+
+            <form action="" class="update_form">
+                <input type="text" id="id" hidden>
+                <input type="text" class="update_name">
+                <input type="text" class="update_email">
+                <button type="button" id="update-btn">Update</button>
+                
+            </form>
+
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="data_table">
+                    <tr>
+                        <td>Mukama</td>
+                        <td>muk@email.com</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <script    src="./script/crud.js"></script>
+</body>
+</html>
