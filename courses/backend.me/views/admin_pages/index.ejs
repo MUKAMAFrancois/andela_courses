@@ -1,0 +1,30 @@
+<header>
+    <%- include('../partials/header_admin.ejs') %>
+</header>
+<h1>Dashboard</h1>
+<p>Welcome to the dashboard</p>
+<div style="display: flex;">
+    <h3 style="margin-right: 40px;">Your Blogs</h3>
+    <a href="/add-blog">Add New Blog</a>
+</div>
+<div class="container_dashboard">
+    <% blogs.forEach(blog => { %>
+    <div class="single_blog">
+        <a class="title_link" href="/post/<%= blog._id %>" ><%= blog.title %></a>
+        <div class="actions">
+            <a class="edit_btn" href="/edit-blog/<%= blog._id %>">Edit</a>
+            <form action="/delete-blog/<%= blog._id %>?_method=DELETE" method="post">
+                <input type="submit" value="Delete" class="delete_btn">
+            </form>
+        </div>
+    </div>
+    <% }) %>  
+</div>
+<div class="load_more">
+    <button class="previous">Previous</button>
+    <button class="next">Next</button>
+</div>  
+
+<footer>
+    <%- include('../partials/footer.ejs') %>
+</footer>

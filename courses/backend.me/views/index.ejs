@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+  <main>
+        <h1>Home</h1>
+        <p>Welcome to the home page</p>
+
+        <img src="./images/bb.jpg" alt="" class="home_image_top">
+        <h2>Latest Blogs</h2>
+
+        <div class="list_of_blogs">
+
+            <% blogs.forEach(blog => { %>
+            <a href="/post/<%= blog._id %>" class="single_blog_card">
+                <img src="<%= blog.image %>" alt="">
+                <h3 class="blog_title"><%= blog.title %></h3>
+                <p class="description_blog"><%= blog.description %></p>
+                <div class="time_of_publish"><%= blog.createdAt.toLocaleDateString()%></div>
+            </a>
+    
+            <% }) %>
+        </div>
+
+        <% if (nextPage !==null) { %>
+
+            <% if (current>1 || nextPage) { %>
+                <a href="?page=<%= current-1 %>" class="pagination_back">Back</a>
+             
+            <% } %>
+            <a href="?page=<%= nextPage %>" class="pagination_next">Next</a>
+        <% } %>
+    </main>    
+</body>
+</html>
