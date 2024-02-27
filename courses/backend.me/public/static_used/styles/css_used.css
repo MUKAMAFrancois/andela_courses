@@ -1,0 +1,136 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Styling the navigation */
+.nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_links li {
+    display: inline;
+}
+
+.nav_links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Styling the main content */
+main {
+    padding: 20px;
+}
+
+.home_image_top {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+.list_of_blogs {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+
+}
+
+.single_blog_card {
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.single_blog_card img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog_title {
+    margin-bottom: 5px;
+}
+
+.description_blog {
+    margin-bottom: 10px;
+}
+
+.time_of_publish {
+    font-style: italic;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+/* Single_blog */
+
+.content_of_blog{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.updated-at{
+    font-style: italic;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+/* search_result */
+
+.main_search{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.single_result_search{
+    width: 100%;
+    text-decoration: none;
+    background-color: #adaaaa;
+    padding: 10px;
+    color:#333;
+    margin-bottom: 20px;
+}
+.single_result_search img{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+
+}
+.search_result{
+    display: flex;
+    justify-content: space-between;
+}
+.author{
+    font-style: italic;
+    color: #777;
+    font-size: 18px;
+}

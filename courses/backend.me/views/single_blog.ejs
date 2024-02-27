@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.title%></title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+    <main>
+        <h1><%= blog.title %></h1>
+        <h3 class="updated-at"><%= blog.updatedAt.toLocaleDateString() %></h3>
+
+        <img src="<%= blog.image %>" alt="" class="home_image_top">
+        <h2>Read Full Article</h2>
+        <div class="content_of_blog"><%= blog.description %></div>
+    </main>
+    
+</body>
+</html>

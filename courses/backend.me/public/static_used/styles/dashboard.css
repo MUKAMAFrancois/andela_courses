@@ -1,0 +1,116 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling the main content */
+main {
+    padding: 20px;
+}
+
+.container_dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    
+}
+
+.single_blog {
+     width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+.single_blog h2 {
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit_btn{
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete_btn{
+    padding: 5px 10px;
+    background-color: #730a14;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.edit_btn:hover,
+.delete_btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the load more section */
+.load_more {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.previous,
+.next {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
