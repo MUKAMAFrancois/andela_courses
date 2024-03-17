@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const usersRoutes = require('./routers/user_routes');
 const blogsRoutes = require('./routers/blog_routes');
 const commentsRoutes=require('./routers/comments_routes');
+const likesRoutes = require('./routers/like_routes');
 
 // Set up middleware
 app.use(express.urlencoded({ extended: true }));
@@ -18,12 +19,17 @@ const port = process.env.PORT || 5000;
 const connectionString = process.env.CONNECTION_STRING;
 
 
+// swagger
+const { swaggerUi, swaggerDocs } = require('./swagger');
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+
 
 
 // Use routes
 app.use('/users', usersRoutes);
 app.use('/blogs', blogsRoutes);
 app.use('/comment',commentsRoutes);
+app.use('/blog', likesRoutes);
 
 app.listen(port, () => {
     console.log(`Server is running on port: http://localhost:${port}`);

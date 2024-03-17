@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "4",
+      "name": "David",
+      "username": "david",
+      "email": "david@gmail.com",
+      "phone": "1234567890",
+      "website": "www.david.com"
+    },
+    {
+      "id": "5",
+      "name": "Evah",
+      "username": "eve",
+      "email": "eve@kn.cv",
+      "phone": "1234567890",
+      "website": "www.eve.com"
+    },
+    {
+      "id": "6",
+      "name": "Frank",
+      "username": "frank",
+      "email": "frank@react.rw",
+      "phone": "1234567890",
+      "website": "www.frank.com"
+    },
+    {
+      "id": "7",
+      "name": "George",
+      "username": "george",
+      "email": "george@learn.com",
+      "phone": "1234567890",
+      "website": "www.george.com"
+    },
+    {
+      "id": "10d7",
+      "name": "test",
+      "email": "test@gmail.com",
+      "phone": "0729431743"
+    },
+    {
+      "id": "8a68",
+      "name": "test",
+      "email": "test@gmail.com",
+      "phone": "0729431743"
+    }
+  ]
+}
