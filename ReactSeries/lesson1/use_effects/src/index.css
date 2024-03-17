@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: #333;
+  color: #fff;
+  padding:30px 70px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width:80%;
+  margin: 0 auto;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+header{
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  box-shadow: rgba(181, 12, 12, 0.35) 0px 5px 15px;
+  padding:10px;
+
+}
+
+main{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap:20px;
+  align-items: center;
+  height: auto;
+  padding:30px 20px;
+  border:#fff 1px solid;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: rgba(181, 12, 12, 0.35) 0px 5px 15px;
+  transition: all 0.3s ease;
+}
+
+main:hover{
+  transform: scale(1.02);
+
+}
+
+main .div1, main .div2, main .div3{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.div3 input{
+  margin:10px;
+  padding:5px;
+}
+
+#click_btn{
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: #065f6a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin:10px 0;
+
+}
+
+.sub_btn{
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin:10px 0;
+
+}
+
+.add_post{
+  display:flex;
+  flex-direction: column;
+}
+
+.add_post input{
+  padding:8px 10px;
+  margin:10px 0;
+}
+
+ul li{
+  margin:20px 0;
+}
+.edit_btn, .delete_btn{
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.edit_btn{
+  background-color: #065f6a;
+  color: #fff;
+
+}
+
+.delete_btn{
+  background-color: #a00;
+  color: #fff;
+}
+
+footer{
+  margin-top: 50px;
+  font-size: 1rem;
+  text-align: center;
 }
